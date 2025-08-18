@@ -225,42 +225,14 @@ The application will be available at:
 - [ ] Application data is user-specific
 - [ ] Logout clears all user data
 
-## 🚀 Deployment
 
-### Backend Deployment (Render/Railway)
-1. Push code to GitHub
-2. Connect repository to hosting service
-3. Set environment variables
-4. Deploy with automatic builds
-
-### Frontend Deployment (Netlify/Vercel)
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder
-3. Configure redirect rules for SPA
-
-### Database (MongoDB Atlas)
-1. Create MongoDB Atlas cluster
-2. Configure network access
-3. Update connection string in environment variables
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+**Sandeep Yadav**
+- GitHub: [@10pie](https://github.com/10pie)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/sandeep-yadav)
+- Email: theoneim31@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -270,13 +242,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - MongoDB for flexible database solution
 - Cloudinary for image management
 
-## 📞 Support
 
-If you have any questions or need help with setup, please:
-1. Check the documentation above
-2. Search existing issues on GitHub
-3. Create a new issue with detailed description
-4. Contact the maintainer
 
 ---
 
