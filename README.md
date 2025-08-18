@@ -231,7 +231,7 @@ The application will be available at:
 
 **Sandeep Yadav**
 - GitHub: [@10pie](https://github.com/10pie)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/sandeep-yadav)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/sandeep-yadav-0b3758268)
 - Email: theoneim31@gmail.com
 
 ## 🙏 Acknowledgments
