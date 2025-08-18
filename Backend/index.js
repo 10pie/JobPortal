@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());    
 app.use(express.urlencoded({ extended: true }));
 const corsOptions = {
-    origin: 'http://localhost:5173', // Replace with your frontend URL
+    origin: 'https://job-portal-phi-lemon.vercel.app/', // Replace with your frontend URL
     credentials: true, // Allow cookies to be sent
 };
 app.use(cors(corsOptions)); // Enable CORS with the specified options
