@@ -14,12 +14,16 @@ app.use(express.json());
 app.use(cookieParser());    
 app.use(express.urlencoded({ extended: true }));
 const corsOptions = {
+  // Use a regular expression to match any subdomain of vercel.app
+  // This is a more robust solution for Vercel's preview deployments.
   origin: [
-    "http://localhost:5173", 
-    "https://job-portal-phi-lemon.vercel.app"
+    "http://localhost:5173",
+    /https:\/\/job-portal-.*\.vercel\.app$/
   ],
   credentials: true,
 };
+
+// app.use(cors(corsOptions));
 
 app.use(cors(corsOptions)); // Enable CORS with the specified options
 // Parse URL-encoded form data (from HTML forms)
