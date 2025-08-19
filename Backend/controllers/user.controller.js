@@ -106,7 +106,7 @@ export const login = async(req,res)=>{
         }
         console.log("Reached till here\n");
         console.log(User);
-        return res.status(200).cookie("token",token,{maxAge:1*24*60*60*1000,httpOnly:true,sameSite:'strict'}).json({
+        return res.status(200).cookie("token",token,{maxAge:1*24*60*60*1000,httpOnly:true,sameSite:'none'}).json({
               
             message:`Logged in Successfully, Welcome Back ${User.fullname}`,
             User,
