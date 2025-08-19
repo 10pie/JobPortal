@@ -1,4 +1,5 @@
-const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8000";
+// Use VITE_ prefix for Vite environment variables
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
 export const USER_API_ENDPOINT = `${BASE_URL}/api/v1/user`;
 export const JOB_API_ENDPOINT = `${BASE_URL}/api/v1/job`;
