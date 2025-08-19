@@ -26,6 +26,7 @@ const CreateCompany = () => {
                 },withCredentials:true
             });
             console.log(res);
+            console.log(res?.data?.success);
             if(res?.data?.success){
                 dispatch(setSingleCompany(res.data.company));
                 toast.success(res.data.message);
@@ -35,8 +36,9 @@ const CreateCompany = () => {
                 if(companiesRes.data.success) {
                     dispatch(setCompanies(companiesRes.data.company));
                 }
-                
+                console.log(companiesRes);
                 const companyId=res?.data?.company?._id ;
+                console.log(companyId);
                 navigate(`/admin/companies/${companyId}`);
             }
         } catch (error) {
