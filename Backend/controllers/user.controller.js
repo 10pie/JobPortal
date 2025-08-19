@@ -17,8 +17,12 @@ export const register= async(req,res)=>{
             });
         };
         const file=req.file;
-        const fileUri=getDataUri(file);
-        const cloudResponse= await cloudinary.uploader.upload(fileUri.content);
+        let cloudResponse ;
+        if(file){
+         const fileUri=getDataUri(file);
+          cloudResponse= await cloudinary.uploader.upload(fileUri.content);
+        
+        }
         // console.log("here");
         let User=await user.findOne({email});
         // console.log("User found:", User);
@@ -30,14 +34,15 @@ export const register= async(req,res)=>{
             })
         }
         const hashPassword = await bcrypt.hash(Password,10);
-        await user.create({
+        User=await user.create({
             fullname,
             email,
             phoneNumber,
             Password:hashPassword,
             role,
             profile:{
-              profilePhoto:cloudResponse.secure_url 
+                profilePhoto: file ? cloudResponse.secure_url : null, // Use cloudResponse if file exists
+    
             }
         });
         return res.status(201).json({
